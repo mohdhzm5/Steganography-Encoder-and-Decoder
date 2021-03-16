@@ -1,0 +1,73 @@
+<! Project by - Mohammad Ahzam
+>
+
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>ImageEncoder/Decoder</title> 
+</head> 
+
+<body style="background-color: #d9ecd0 ;padding-left:20px;padding-right: 20px; "> 
+<center> <h1 style="color:#454140 ;">Steganography</h1> </center> 
+	<table>
+		<tr>
+			<td>
+				<div style="padding: 0 100px 20px 0;">
+					<p style="color: #454140 ;">
+						Steganography is the science of hiding information. Whereas the goal of cryptography is to make data unreadable by a third party, the goal of steganography is to hide the data from a third party.There are a large number of steganographic methods that most of us are familiar with (especially if you watch a lot of spy movies!), ranging from invisible ink and microdots to secreting a hidden message in the second letter of each word of a large body of text and spread spectrum radio communication.Steganography can be used to conceal almost any type of digital content, including text, image, video or audio content; the data to be hidden can be hidden inside almost any other type of digital content. The content to be concealed through steganography -- called hidden text -- is often encrypted before being incorporated into the innocuous-seeming cover text file or data stream. If not encrypted, the hidden text is commonly processed in some way in order to increase the difficulty of detecting the secret content. 
+					</p>
+				</div>
+				
+			</td>
+			<td>
+				<div style="padding: 0 30px 20px 0;">
+					<img src="image.png" alt="image not found"  style="width:400px;height:225px;">
+				</div>
+			</td>
+		
+			
+			
+		</tr>
+	</table>
+
+
+
+<br><br>
+<button type="button" class="collapsible">Click For Encoding message in image</button>
+
+<div class="content" >
+	 
+			<input type="text" id="message" placeholder="Enter your secret message here">
+			<label for="hidden">Upload the image To hide the message </label>
+			<input type="file" id="imageLoader" name="imageLoad"/>
+			<canvas id="imageCanvas"></canvas>
+			<button id="btndownload">Download</button>
+			
+			<canvas id="textCanvas"></canvas>
+
+	
+
+</div>
+<br>
+<br>
+<button type="button" class="collapsible">Click For Dencoding message from image</button>
+<div class="content">
+
+
+		<label>Upload the image:</label>
+		<input type="file" id="imageLoader2" name="imageLoader2"/><br><br>
+		<label>Hidden text in image  was</label><br>
+		<canvas id="imageCanvas2"></canvas>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="index.js"></script>
+</body> 
+
+</html> 
